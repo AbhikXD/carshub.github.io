@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Home Page</title>
+    <style>
+        .body{
+            font-family: 'EB Garamond', serif;
+        }
+        div.namehead{
+            text-align: center;
+            font-style: italic;
+            /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+            font-size: 30px;
+            color: rgb(234, 231, 231);
+            background-image: url('/E-commerce/img-res/carshead.jpg');
+            background-size:cover;
+            background-repeat:no-repeat;
+            width:100%;
+        }
+        nav.navtag{
+            
+            text-align: right;
+            flex:1;
+            font-size: 18px;
+            /* font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+        }
+        nav ul{
+            margin: 0px;
+            list-style-type:none;
+            display: inline-block;
+            padding:0%;
+        }
+        nav li{
+            display:inline-block;
+            margin: 20px;
+        }
+        a{
+            color: #555;
+            text-decoration:none;
+        }
+        div.container{
+            max-width: 1300px;
+            margin:auto;
+            padding-left: 25px;
+            padding-right:25px ;
+            
+        }
+        div.row{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+         div.col1{
+            flex-basis: 50%;
+            min-width: 100px;
+            
+        } 
+        div.col1 img{
+            min-width: 100%;
+            padding: 50px 0;}
+        div.col1 h1{
+            font-size: 50px;
+            line-height:60px;
+            margin-left:25px;   
+            margin-bottom: 0%;
+        } 
+        div.col1 p{
+            margin-left:25px ;
+            margin-top: 0%;
+            margin-bottom: 0%;
+        }
+        .btn{
+            padding:8px 30px;
+            display: inline-block;
+            background : #ff523b;
+            margin:25px;
+            color:#fff;
+            border-radius: 30px;
+            transition:background 0.3s;
+        }
+        .btn:hover{
+            background :#563434;
+
+        }
+        div.Header{
+            background:linear-gradient(rgb(214, 212, 212) 0, rgb(184, 183, 183), rgb(158, 160, 160) 100%);
+            font-family: 'EB Garamond', serif;  
+        }
+        .categories{
+            margin:70px 0;
+            margin-left: 25px;
+        }
+        .col3{
+            flex:20%;
+            min-width: 250px;
+            
+            margin-bottom: 30px;
+        }
+        .col3 img{
+            align-items: center;
+            width: 95%;
+
+        }
+      
+    </style>
+</head>
+<body>
+   <div class="Header">
+        <div class="container">
+            <div class="namehead">
+                <h1>Car-Hub</h1>
+                </div>
+            <hr/>
+        <div>
+            <nav class="navtag" ><ul>
+                <li><a href="">Home</a></li>
+                <li><a href="./explorenow.html">Product</a></li>
+                <li><a href="">About </a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="">Account</a></li> 
+            </ul>
+            <img src="/E-commerce/img-res/cart.png" width="30px" height="30px">
+        </nav>
+            
+
+        </div>
+        <div class="row">
+            <div class="col1">
+                <h1 >Buy a car that <br/> defines your style! </h1>
+                <p>Choice from wide range of cars <br/>from sedan to SUV all are available</p>
+                <a href="./explorenow.html" class="btn">Explore Now &#8594</a>
+            </div>
+             <div class ="col1">
+                <img src="/E-commerce/img-res/carwhite.png">
+                </div>
+            </div>
+        </div>
+    </div>
+     
+    <!-- Category Features -->
+    <div class="categories">
+        <div class ="row">
+            <div class="col3"><img src="/E-commerce/img-res/car1.jpg"></div>
+            <div class="col3"><img src="/E-commerce/img-res/car2.jpg"></div>
+            <div class="col3"><img src="/E-commerce/img-res/car3.jpg"></div>
+        </div>
+
+    </div>
+
+
+        
+    </Header>
+    
+</body>
+</html>

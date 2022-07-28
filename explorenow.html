@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Products</title>
+    <style>
+         .body{
+            font-family: 'EB Garamond', serif;
+        }
+        div.namehead{
+            text-align: center;
+            font-style: italic;
+            font-family: 'EB Garamond', serif;
+            /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+            font-size: 30px;
+            color: rgb(234, 231, 231);
+            background-image: url('/E-commerce/img-res/carshead.jpg');
+            background-size:cover;
+            background-repeat:no-repeat;
+            width:100%;
+
+        }
+        p{
+            margin:0px;
+        }
+        nav.navtag{
+            text-align: right;
+            flex:1;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        nav ul{
+            list-style-type:none;
+            display: inline-block;
+        }
+        nav li{
+            display:inline-block;
+            margin: 20px;
+        }
+        a{
+            color: #555;
+            text-decoration:none;
+        }
+        div.container{
+            max-width: 1300px;
+            margin:auto;
+            padding-left: 15px;
+            padding-right:15px ;
+            background:linear-gradient(rgb(242, 237, 237),rgb(255, 255, 232));
+        }
+        .cards{
+        
+            display:grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap:20px;
+            align-content: center;
+        }
+        .card{
+            box-shadow:0 0 3px rgba(84, 84, 84, 0.641);
+        }
+        .card_img{
+            width: 100%;
+            display: block;
+        }
+        .carbttn{
+            padding:8px 10px;
+            display:inline-block;
+            background-color: white;
+            color:#1d7837;
+            width: 100%;
+            border: 2px solid #6ff795; 
+            /* margin:25px; */
+            margin-top: 0;
+            /* color:#fff; */
+            border-radius: 6px;
+            cursor: pointer;
+            text-align: center;
+            transition:background 0.3s;
+        }
+        .carbttn:hover
+        {
+            background-color: rgb(192, 231, 190);
+            color: black;
+        }
+        .cardcontent{
+            display: inherit;
+            line-height: 1.3;
+            font-size: 16px; 
+            padding:10px;
+            background: #f3f2f2;
+        }
+        .cardinfo{
+            display:flex;
+        }
+       
+    </style>
+</head>
+<body>
+    <Header>
+        <div class="container">
+            <div class="namehead">
+            <h1>Car-Hub</h1>
+            </div>
+            <hr/>
+            <nav class="navtag" ><ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./explorenow.html">Product</a></li>
+                <li><a href="">About </a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="">Account</a></li>
+                
+            </ul></nav>
+        
+        <div class="cards">
+            <div class="card">
+
+                <img src="/E-commerce/img-res/Cars/car1.jpg" class="card_img">
+                <div class="cardcontent">
+                    <p>Mahindra Scorpio</p>
+                    <p>INR 13.54lacs</p>
+                </div>
+                <div class="cardinfo">
+                    <a href="" class="carbttn">Details</a>
+                </div>
+                
+            
+            
+            
+            </div>
+            <div class="card">
+
+                <img src="/E-commerce/img-res/Cars/car2.webp" class="card_img">
+                <div class="cardcontent">
+                    <p>Mahindra XUV700</p>
+                    <p>INR 13.18lacs</p>
+                </div>
+                <div class="cardinfo">
+                    <a href="" class="carbttn">Details</a>
+                </div>
+            
+            </div>
+            <div class="card">
+
+                <img src="/E-commerce/img-res/Cars/car3.jpg" class="card_img">
+                <div class="cardcontent">
+                    <p>Hyundai Verna</p>
+                    <p>INR 9.41 lacs</p>
+                </div>
+                <div class="cardinfo">
+                    <a href="" class="carbttn">Details</a>
+                </div>
+                
+            
+            
+            
+            </div>
+            <div class="card">
+
+                <img src="/E-commerce/img-res/Cars/car4.jpg" class="card_img">
+                <div class="cardcontent">
+                    <p>MG Hector</p>
+                    <p>INR 14.51lacs</p>
+                </div>
+                <div class="cardinfo">
+                    <a href="" class="carbttn">Details</a>
+                </div>
+                
+            
+            
+            
+            </div>
+            <div class="card">
+
+                <img src="/E-commerce/img-res/Cars/car5.jpg" class="card_img">
+                <div class="cardcontent">
+                    <p>Honda City</p>
+                    <p>INR 11.46lacs</p>
+                </div>
+                <div class="cardinfo">
+                    <a href="" class="carbttn">Details</a>
+                </div>
+                
+            
+            
+            
+            </div>
+            <div class="card">
+
+                <img src="/E-commerce/img-res/Cars/car6.jpg" class="card_img">
+                <div class="cardcontent">
+                    <p>Skoda Slavia</p>
+                    <p>INR 10.99lacs</p>
+                </div>
+                <div class="cardinfo">
+                    <a href="" class="carbttn">Details</a>
+                </div>
+                
+            
+            
+            
+            </div>
+            <div class="card">
+
+                <img src="/E-commerce/img-res/Cars/car7.jpg" class="card_img">
+                <div class="cardcontent">
+                    <p>Volkswagen Virtus</p>
+                    <p>INR 11.22lacs</p>
+                </div>
+                <div class="cardinfo">
+                    <a href="" class="carbttn">Details</a>
+                </div>
+                
+            
+            
+            
+            </div>
+            <div class="card">
+
+                <img src="/E-commerce/img-res/Cars/car7.jpg" class="card_img">
+                <div class="cardcontent">
+                    <p>Kia Seltos</p>
+                    <p>INR 10.19lacs</p>
+                </div>
+                <div class="cardinfo">
+                    <a href="" class="carbttn">Details</a>
+                </div>
+                
+            
+            
+            
+            </div>
+        </div>
+    </div>
+        
+    </Header>
+    
+</body>
+</html>

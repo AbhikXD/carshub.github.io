@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <title>Contact</title>
+    <style>
+        body{
+           
+            font-family: 'EB Garamond', serif;
+            background:linear-gradient(rgb(253, 253, 253) 0, rgb(241, 255, 253), rgb(215, 250, 247) 100%);
+                /* background-image:url('/E-commerce/img-res/background/contactback2.jpg'); */
+           backdrop-filter: blur(5px);
+           background-repeat: no-repeat;
+            
+        }
+        div.namehead{
+            text-align: center;
+            font-style: italic;
+            /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+            font-size: 30px;
+            color: rgb(234, 231, 231);
+            background-image: url('/E-commerce/img-res/carshead.jpg');
+            background-size:cover;
+            background-repeat:no-repeat;
+            width:100%;
+
+        }
+       
+        nav.navtag{
+            text-align: right;
+            flex:1;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           
+        }
+        nav ul{
+            list-style-type:none;
+            display: inline-block;
+        }
+        nav li{
+            display:inline-block;
+            margin: 20px;
+        }
+        a{
+            color: rgb(9, 9, 9);
+            text-decoration:none;
+            
+        }
+        div.container{
+            max-width: 1300px;
+            margin:auto;
+            padding-left: 15px;
+            padding-right:15px ;
+            
+        
+        }
+        .subcontainer
+        {
+            /* background:linear-gradient(rgb(225, 225, 225) 0, rgb(241, 240, 240), rgb(214, 214, 214) 100%); */
+            background-repeat: no-repeat;
+            width: 100%;
+            font-size: 16px;
+            margin-bottom: 60px;
+        }
+        .contactbox{
+            display: flex;
+            background: white;
+        }
+        .contactleft
+        {
+            flex-basis: 60%;
+            padding :30px 60px;
+        }
+        .contactright
+        {
+            flex-basis: 40%;
+            padding :40px;
+            font-weight: 700;
+    
+            background: #a79aee;
+            color:white;
+        }
+        .subcontainer h1{
+            margin-bottom: 5px;
+            margin-top: 10px;
+        }
+        .subcontainer p{
+            margin-top:5px;
+            margin-bottom: 40px;
+        }
+        .input-row{
+            display:flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+
+        }
+        .input-row.input-grp{
+            flex-basis: 45%;
+           
+        }
+        input{
+            width:100%;
+            border:none;
+            margin-top: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        textarea{
+            width:100%;
+            border:1px solid #ccc;
+            outline:none;
+            padding:10px;
+            box-sizing: border-box;
+        }
+        label{
+            margin-bottom: 10px;
+            display:block;
+            color:#1c00b5; 
+        }
+        button{
+            background:#968ade;
+            width:10%;
+            border:none;
+            outline:none;
+            color:white;
+            padding:6px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }   
+        .contactleft h2{
+            font-weight: 800;
+            color:#593fed
+        }
+        tr td:first-child{
+            padding-right:20px;
+        }
+        tr td{
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <Header>
+        <div class="container">
+        <div class="namehead">
+            <h1>Pro-Cars</h1>
+            </div>
+            <hr/>
+            <nav class="navtag" ><ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./explorenow.html">Product</a></li>
+                <li><a href="">About </a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="">Account</a></li>
+                
+            </ul></nav>
+        
+        
+        <div class="subcontainer">
+            <h1> Connect With Us</h1>
+            <p><i>We would like to repond to your queries and help you succeed.<br>Feel free to get in touch with us. </i></p>
+            <div class="contactbox">
+                <div class="contactleft">
+                 <h2><u>Sent your request</u></h2>
+                 <form>
+                    <div class="input-row">
+                        <div class="input-grp">
+                            <label >Name</label>
+                            <input type="text" placeholder="Type your name ">
+                        </div>
+                        <div class="input-grp">
+                            <label >Phone</label>
+                            <input type="number" placeholder="+91 42252 65326 ">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-grp">
+                            <label >Email</label>
+                            <input type="email" placeholder="Mail id">
+                        </div>
+                        <div class="input-grp">
+                            <label >Subject</label>
+                            <input type="text" placeholder="Product demo">
+                        </div>
+                    </div>
+                    <label>Message</label>
+                    <textarea rows="5 " placeholder="Your Message"></textarea>
+                    <button type="submit">SEND</button>
+                 </form>       
+                </div>
+                <div class="contactright">
+                    <h2><u>Reach Us</u></h2>
+                    <table>
+                        <tr>
+                            <td>Email</td>
+                            <td>contactus@takarbandil.com</td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td>90421042452</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>212 , Ground floor,Partha Building , MamtaBangala Road, Durgapur-713269</td>
+                        </tr>
+
+
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>  
+        
+    </Header>
+    
+</body>
+</html>
